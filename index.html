@@ -5,32 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>homework1</title>
 </head>
 <body>
 <script>
+    // - 1.Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
     let a ='hello';
     let b ='owu';
     let c ='com';
     let d ='ua';
-    console.log(a);
-    console.log(b);
-    console.log(c);
-    console.log(d);
-    document.write(a);
-    document.write(b);
-    // document.write(`<h2> ${b} </h2>`);
-    document.write(c);
-    document.write(d);
-a='owu';
-b='hello';
-c='good';
-d='school';
-    console.log(a);
-    console.log(b);
-    console.log(c);
-    console.log(d);
-    document.write(`<h2>${a} ${b} ${c} ${d}</h2>`);
     let ek = 1;
     let f = 10;
     let g=-999;
@@ -38,37 +21,147 @@ d='school';
     let j=3.14;
     let k=2.7;
     let num=16;
-    let m='true';
-    let n='false';
-    let numb=[1,10,-999,123,3.14,2.7, 16];
-    console.log(ek)
-    console.log(f)
-    console.log(g)
-    console.log(h)
-    console.log(j)
-    console.log(k)
-    console.log(numb);
-    document.write(`${numb}`);
-    console.log(num)
-    console.log(typeof num)
-ek=-999;
-    console.log(ek)
+    let m=true;
+    let n=false;
+    // Вивести кожну змінну за допомогою: console.log, document.write
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(ek);
+    console.log(f);
+    console.log(g);
+    console.log(h);
+    console.log(j);
+    console.log(k);
+    console.log(num);
+    console.log(m);
+    console.log(n);
+    document.write(a);
+    document.write(b);
+    document.write(c);
+    document.write(d);
     document.write(ek)
-console.log(m);
-    document.write(m)
-console.log(n);
-    document.write(m+n);
+    document.write(f);
+    document.write(g);
+    document.write(h);
+    document.write(j);
+    document.write(k);
+    document.write(num);
+    document.write(m);
+    document.write(n);
+    // Переприсвоїти кожну змінну з завдання вище на будь які довільні значення.
+    a='owu';
+    b='hello';
+    c='good';
+    d='school';
+    ek=-999;
+    f=5;
+    g='ball';
+    h=35;
+    j=true;
+    k='50';
+    num=1000;
+    m=false;
+    n=55;
+    // Вивести кожну змінну за допомогою: console.log , document.write
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(ek);
+    console.log(f);
+    console.log(g);
+    console.log(h);
+    console.log(j);
+    console.log(k);
+    console.log(num);
+    console.log(m);
+    console.log(n);
+    document.write(a);
+    document.write(b);
+    document.write(c);
+    document.write(d);
+    document.write(ek)
+    document.write(f);
+    document.write(g);
+    document.write(h);
+    document.write(j);
+    document.write(k);
+    document.write(num);
+    document.write(m);
+    document.write(n);
+    document.write(`<h2>${a} ${b} ${c} ${d}</h2>`);
+
+    // - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. Зконкатенувати їх в одну змінну person.
     let firstName='Olena';
     let middleName='Volodymyrivna';
     let lastName='Vergeles';
-    // let me_person={
-    //     id: 'Olena',
-    //     surname: 'Vergeles'
+    // let person=[firstName + ' ' + middleName + ' ' + lastName];
+    let person=firstName+ ' ' +middleName+ ' ' +lastName;
+    console.log(person);
+    document.write(person);
+
+    // За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
+    // Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+    let name = prompt('Напишіть Ваше ім"я (Your name)');
+    if (name) {
+        console.log('добре');
+    }else {
+        console.log('ні-ні, так не піде');
+    }
+    alert('Вітаємо Вас, '+ name+'!');
+    let age = prompt('Скільки тижнів Ви навчаєтесь в Okten?');
+    confirm('Ви навчаєтесь в Okten більше 2-х тижнів?');
+    alert(`Ви навчаєтесь ${age} тижнів!`);
+
+    // За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+        // let a = 100; let b = '100'; let c = true;
+    let ac = 100;
+    let bc = '100';
+    let cc = true;
+    console.log(typeof ac)
+    console.log(typeof bc)
+    console.log(typeof cc)
+    // Поставет відповідний оператор в виразах що б вийшов відповідний результат.
+    console.log(5<6); // 5 < 6 -> true
+    console.log(5>6);  // 5 > 6 -> false
+    console.log(5>=6);   // 5 >= 6 -> false
+    console.log(5===6);    // 5 = 6 -> false
+    console.log(10 === 10);  // 10 === 10 -> true
+    console.log(10==10); // 10 == 10 -> true
+    console.log(10!==10);    // 10 !==10 -> false
+   console.log(10 < 10); // 10 !!0 10 -> false
+   console.log(10 > 10); // 10 !!'' 10 -> false
+    console.log(123 != '123'); // 123 != '123' -> false
+    console.log(123 !== '123'); // 123 !== '123' -> true
+
+// Якщо не важко написати, то що не так з виразами, що б'є помилки помаранчевим кольором?
+    // Як правильно їх потрібно записати?
+
+
+
+
+
+
+    // Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+    document.write(`<h3>Вітаю ${firstName} ${middleName}! Ваше прізвище ${lastName}?</h3>`)
+    // let me_person = {
+    //     id: 1,
+    //     name: 'Olena',
+    //     middleName:'Volodymyrivna',
+    //     surname: 'Vergeles',
+    //     time: '19 days'
     // };
-    let person=[firstName,middleName,lastName];
-    console.log(person)
-    document.write(person)
-    document.write(`Вітаю ${firstName} ${middleName}.! Ваше прізвище ${lastName}?`)
+    // console.log(me_person.name)
+
+    // let numb=[1,10,-999,123,3.14,2.7, 16];
+    // console.log(numb);
+    // console.log(numb[5]);
+    // document.write(`<h2>${numb}</h2>`);
+    // console.log(typeof num)
+
+
 
 
 </script>
