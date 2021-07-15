@@ -42,26 +42,96 @@
     //     5 + '3',
     //     '5' - 3,
     //     75 + 'кг'
-    // let a6=10;
-    // let a7=20;
-    // let a8=30;
-    // let a9=40;
-    // let a10=50;
-    // console.log(5%3);
-
-
+    let a6=(5 % 3);
+    let a7=(3 % 5);
+    let a8=(5 + '3');
+    let a9=('5' - 3);
+    let a10=(75 + 'кг');
+    // console.log(a10);
 
     // 4. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
     // Значееня площі зберігати в змінній s.
-    // let height=23;
-    // let width=10;
-    // function square(height,width){
-    //     let s=(height*width);
-    //     return s;
 
-    // function perimetr(a6,a7){
-    // let result=(a6+a7)*2;
-    // return result;
+    function square (height,width){
+    let res =(height*width);
+        return res;
+    }
+    let s= square(23,10);
+    console.log(s);
+    // 5.  Напиши код, який знаходить обєм циліндра висотою 10м (змінна heightC) и діаметром основи 4м (dC),
+    //     результат помістити в змінну v. (V=Pi*r2*h)
+    const Pi=Math.PI;
+    console.log(Pi);
+    function cylinderVolume (heightC,dC){
+        let result =(Pi*((dC/2)**2)*heightC);
+        return result;
+    }
+    let v= cylinderVolume(10,4);
+    console.log(v);
+    // 6. В прямокутного трикутника дві сторони n (з значенням 3) і m (з значенням 4).
+    // Найдіть гіпотенузу k по теоремі Піфагора (потрібно використовувати функцію Math.pow(число, ступінь) або оператор піднесення в степінь ** ).
+    // ab2=a2+b2
+
+    function Hypotenuse (n,m){
+        let resu =(n**2+m**2);
+        return resu;
+    }
+    let nm= Hypotenuse(3,4);
+    let k=(Math.sqrt(nm));
+    console.log(k);
+    // 8. Вывести в окно браузера при помощи метода alert() следующие данные: Ваше ФИО, возраст, хобби (каждой на новой строки спомощью \n).
+    alert('Вергелес О.В.\nжінка\nлюблю подорожі та гірські лижі');
+
+  //   9. Створити 4 змінні з використанням ключового слова let з іменами str1, str2, str3, concatenation.
+  //       Змінній str1 присвоїти фразу ‘Хто ‘, str2 – ‘ти ‘, str3 – ‘такий?’
+  //       Локальній змінній concatenation присвоїти результат конкатенації (склеювання) 3-х стрічок: str1, str2, str3.
+  //       Вивести в документ вміст змінної concatenation за допомогою document.write
+    let str1='Хто ';
+    let str2='ти ';
+    let str3='такий?';
+    let concatenation=(str1+str2+str3);
+    document.write(concatenation+"<br/>");
+    // 10. Подумайте Які значення виведе в вікно браузера наступний фрагмент коду?  і чому?
+
+    let strong = "20";
+    let a = 5;
+    document.write(strong + a + "<br/>");
+    console.log(strong + a + "<br/>" )
+    //при додаванні тексту (string) до числа вираз перетворюється в текст (string) і відбувається конкатенація (об"єднання)
+    document.write(strong - a + "<br/>");
+    console.log(strong - a + "<br/>")
+    //при відніманні від тексту (string) числа вираз перетворюється в число
+    document.write(strong * "2" + "<br/>");
+    console.log(strong * "2" + "<br/>" )
+    //при множенні тексту (string) на текст (string) - перетворюється на число
+    document.write(strong / 2 + "<br/>");
+    console.log(strong / 2 + "<br/>" )
+    //при діленні тексту (string) на число - перетворюється на число
+
+    // 13. С помощью окна ввода, вызываемого методом prompt, сделать сложение двух чисел, а вывод результата при помощи метода alert
+
+    let vyraz=prompt('Скільки буде 2+3 ?');
+    if (vyraz==5){
+        alert('Так! Правильно! Це буде 5!');
+    }else {
+        alert('Ні-ні-ні, не треба писати будь що!');
+    }
+
+    // 14.За допомогою вікна ввода, через prompt, користувач послідовно вводить імя, прізвище і кількість зубів, які Ви ще маєте, а вам необхідно
+    // вивести стрічку такого виду
+    // Доброго вечера Микита Петренко, мої вітання, що Ви маєте 32 зуба , а вивід результата за допомогою метода alert
+    let questionName=prompt('Напишіть Ваше ім"я');
+    let question2=prompt('А ще попрошу написати Ваше прізвище');
+    let questionBasic=prompt('І останнє питання: Скільки зубів Ви маєте?');
+
+        alert(`Доброго вечера, ${questionName} ${question2}, мої вітання, що Ви маєте ${questionBasic} зуб(а)`);
+
+
+
+
+
+
+
 
 
 </script>
